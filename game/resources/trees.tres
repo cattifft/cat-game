@@ -1,0 +1,32 @@
+[gd_resource type="TileSet" format=3 uid="uid://ucd0d4gq8e44"]
+
+[ext_resource type="Texture2D" uid="uid://dkojsdkpr13l7" path="res://assets/Tiny Swords (Free Pack)/Terrain/Resources/Wood/Trees/Tree3.png" id="1_s0v70"]
+[ext_resource type="Texture2D" uid="uid://bsjbtfx5dcoy8" path="res://assets/Tiny Swords (Free Pack)/Terrain/Decorations/Bushes/Bushe1.png" id="2_0b01g"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_64w2a"]
+texture = ExtResource("1_s0v70")
+texture_region_size = Vector2i(192, 192)
+0:0/animation_speed = 8.0
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/animation_frame_4/duration = 1.0
+0:0/animation_frame_5/duration = 1.0
+0:0/animation_frame_6/duration = 1.0
+0:0/animation_frame_7/duration = 1.0
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 48)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, 0, 8, 16, -8, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fpun6"]
+texture = ExtResource("2_0b01g")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_64w2a")
+sources/1 = SubResource("TileSetAtlasSource_fpun6")
